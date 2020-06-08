@@ -5,6 +5,8 @@ import javax.persistence.EntityManager;
 import br.com.caririflix.web.DAO.util.*;
 import br.com.caririflix.web.model.Author;
 
+
+///falta criar list
 public class AuthorDAO {
 
     public void save(Author author) {
