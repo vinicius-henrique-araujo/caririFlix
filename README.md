@@ -1,7 +1,7 @@
 # caririFliX
 ### Projeto acadẽmico web Monólíto
 ## STACKS
-- HIBERNTE
+- HIBERNATE
 - BOOTSTRAP
 - JAVA
 - LOMBOK
