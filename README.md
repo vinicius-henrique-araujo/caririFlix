@@ -1,5 +1,5 @@
 # caririFliX
-### Projeto acadẽmico web Monólíto
+### PROJETO ACADÊMICO WEB MONÓLITO
 ## STACKS
 - HIBERNATE
 - BOOTSTRAP
