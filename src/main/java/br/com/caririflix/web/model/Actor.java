@@ -27,4 +27,5 @@ public class Actor {
 
     @Column(name = "Nome do Personagem")
     private String character;
+    
 }
