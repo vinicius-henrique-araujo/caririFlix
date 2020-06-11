@@ -23,6 +23,24 @@ public class ActorDAO {
             }
         }
     }
+
+    public void update(Actor actor) {
+        EntityManager em = ConnectionFactory.getEntityManager();
+
+        try {
+            em.getTransaction().begin();
+            em.persist(actor);
+            em.getTransaction().commit();
+
+        } catch (Exception e) {
+            em.getTransaction().rollback();
+        } finally {
+            if (em.isOpen() && em.getTransaction().isActive())
+                em.close();
+        }
+
+    }
+
     public void remove(Actor actor) {
         EntityManager em = ConnectionFactory.getEntityManager();
 
