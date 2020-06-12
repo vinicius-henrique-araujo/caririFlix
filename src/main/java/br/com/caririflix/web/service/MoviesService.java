@@ -23,7 +23,7 @@ public class MoviesService {
 
         if(movies.getSynopsis()== null || movies.getSynopsis().isEmpty())
             throw new CaririFlixException("Por favor insira uma Sinopse");
-        moviesDAO.save(movies);
+            moviesDAO.save(movies);
     }
     
 }

@@ -6,7 +6,6 @@ import br.com.caririflix.web.DAO.util.*;
 import br.com.caririflix.web.model.Movies;
 
 
-///falta criar list
 public class MoviesDAO {
 
     public void save(Movies movies) {

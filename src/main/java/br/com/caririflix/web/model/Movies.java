@@ -1,7 +1,10 @@
 package br.com.caririflix.web.model;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,4 +33,16 @@ public class Movies {
  
     @Column(name = "Sinopse do Filme")
     private String synopsis;
+
+    @OneToMany( cascade = CascadeType.ALL)
+    @JoinColumn
+    private Actor actor;
+
+    @OneToMany( cascade = CascadeType.ALL)
+    @JoinColumn
+    private Trailer trailer;
+
+    @OneToMany( cascade = CascadeType.ALL)
+    @JoinColumn
+    private WatchNow watchNow;
 }
