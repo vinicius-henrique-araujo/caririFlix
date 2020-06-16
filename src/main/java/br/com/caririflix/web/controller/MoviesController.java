@@ -43,21 +43,21 @@ public class MoviesController {
     }
 
     @Get("id/{id}")
-    public void getMoviesById(String id){
-        Movies movies = moviesService.findById(id);    
+    public void getMoviesById(Integer code){
+        Movies movies = moviesService.findById(code);    
         result.include("moviesToUpdate", movies);
         result.of(this).update(null);
     }    
     
     @Get("")
-    public void getCustomers() {
-       result.include("moviesList", moviesService.list());
+    public void getMovies() {
+       result.include("moviesList", moviesService);
     }
     
     @Post("remove")
-    public void remove(String id){
-        moviesService.delete(id);
-        result.redirectTo(this).getCustomers();          
+    public void remove(Movies movies){
+        moviesService.delete(movies);
+        result.redirectTo(this).getMovies();          
     }
 
 }

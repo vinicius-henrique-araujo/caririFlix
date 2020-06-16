@@ -48,6 +48,11 @@ public class MoviesService {
     public void delete(Movies movies){
         this.moviesDAO.remove(movies);
     }
+    
+    public Movies findById(Integer code){
+        return this.moviesDAO.findById(code);
+    }
+
 
 
     
