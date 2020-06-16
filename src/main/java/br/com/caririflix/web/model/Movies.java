@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 public class Movies {
     
     @Id
-    private Number code;
+    private Integer code;
     
     @Column(name = "Nome do Filme")
     private String  name;

@@ -23,7 +23,32 @@ public class MoviesService {
 
         if(movies.getSynopsis()== null || movies.getSynopsis().isEmpty())
             throw new CaririFlixException("Por favor insira uma Sinopse");
-            moviesDAO.save(movies);
+        
+        moviesDAO.save(movies);
     }
+
+    public void update(Movies movies)throws CaririFlixException{
+        if(movies.getName() == null || movies.getName().isEmpty())
+            throw new CaririFlixException("Por favor insira o nome Filme");
+
+        if(movies.getGenre() == null || movies.getGenre().isEmpty())
+            throw new CaririFlixException("Por favor insira o Gênero");
+
+        if(movies.getRelease_date()== null || movies.getRelease_date().isEmpty())
+            throw new CaririFlixException("Por favor insira a Data de Lançamento");
+
+        if(movies.getDirection()== null || movies.getDirection().isEmpty())
+            throw new CaririFlixException("Por favor insira os Responsaveis pela Direção");
+
+        if(movies.getSynopsis()== null || movies.getSynopsis().isEmpty())
+            throw new CaririFlixException("Por favor insira uma Sinopse");
+        
+    }
+
+    public void delete(Movies movies){
+        this.moviesDAO.remove(movies);
+    }
+
+
     
 }
