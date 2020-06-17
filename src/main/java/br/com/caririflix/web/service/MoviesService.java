@@ -1,5 +1,7 @@
 package br.com.caririflix.web.service;
 
+import java.util.List;
+
 import br.com.caririflix.web.DAO.MoviesDAO;
 import br.com.caririflix.web.model.Movies;
 import br.com.caririflix.web.util.exceptions.CaririFlixException;
@@ -42,7 +44,8 @@ public class MoviesService {
 
         if(movies.getSynopsis()== null || movies.getSynopsis().isEmpty())
             throw new CaririFlixException("Por favor insira uma Sinopse");
-        
+    
+        moviesDAO.update(movies);
     }
 
     public void delete(Movies movies){
@@ -51,6 +54,9 @@ public class MoviesService {
     
     public Movies findById(Integer code){
         return this.moviesDAO.findById(code);
+    }
+    public List<Movies> all() {
+        return moviesDAO.all();
     }
 
 

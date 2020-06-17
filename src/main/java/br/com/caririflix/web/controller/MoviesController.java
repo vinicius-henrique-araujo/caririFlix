@@ -2,6 +2,8 @@ package br.com.caririflix.web.controller;
 
 
 
+import javax.inject.Inject;
+
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
@@ -38,8 +40,16 @@ public class MoviesController {
 
     @Post("update")
     public void update(Movies movies) {
-        moviesService.update(movies);
-        result.redirectTo(this);
+        try {
+            moviesService.update(movies);
+            result.redirectTo(this);
+        } catch (Exception e) {
+            //TODO: handle exception
+            result.include(e.getMessage());
+            result.redirectTo(this).update(movies);
+        }
+
+        
     }
 
     @Get("id/{id}")
