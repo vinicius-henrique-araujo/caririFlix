@@ -24,6 +24,6 @@ public class Trailer {
     @Column(name = " Link Trailer 1", nullable = false)
     private String trailer1;
 
-    @Column(name = " Link Trailer 2", nullable = false)
-    private String trailer2;
+//     @Column(name = " Link Trailer 2", nullable = false)
+//     private String trailer2;
 }

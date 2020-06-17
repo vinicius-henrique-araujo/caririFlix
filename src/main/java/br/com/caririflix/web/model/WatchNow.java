@@ -25,6 +25,6 @@ public class WatchNow {
     @Column(name = "Assistir Agora Link 1", nullable = false)
     private String watch_now_1;
 
-    @Column(name = "Assistir Agora Link 2", nullable = false)
-    private String watch_now_2;
+    // @Column(name = "Assistir Agora Link 2", nullable = false)
+    // private String watch_now_2;
 }
