@@ -74,6 +74,11 @@
       <artifactId>javassist</artifactId>
       <version>3.18.1-GA</version>
     </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
   </dependencies>
 
   <build>

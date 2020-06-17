@@ -21,7 +21,7 @@ public class MoviesController {
     @Inject
     private MoviesService moviesService;
     
-    @Get ( " new " )
+    @Post
     public  void  create () {
         
     }
@@ -38,7 +38,7 @@ public class MoviesController {
         }    
     }
 
-    @Post("update")
+    @Post("/update")
     public void update(Movies movies) {
         try {
             moviesService.update(movies);
@@ -64,7 +64,7 @@ public class MoviesController {
        result.include("moviesList", moviesService);
     }
     
-    @Post("remove")
+    @Post("/remove")
     public void remove(Movies movies){
         moviesService.delete(movies);
         result.redirectTo(this).getMovies();          
