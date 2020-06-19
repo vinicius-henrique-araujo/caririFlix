@@ -44,14 +44,11 @@ public class MoviesController {
             moviesService.update(movies);
             result.redirectTo(this);
         } catch (Exception e) {
-            //TODO: handle exception
+            
             result.include(e.getMessage());
             result.redirectTo(this).update(movies);
         }
-
-        
     }
-
     @Get("id/{id}")
     public void getMoviesById(Integer code){
         Movies movies = moviesService.findById(code);    
