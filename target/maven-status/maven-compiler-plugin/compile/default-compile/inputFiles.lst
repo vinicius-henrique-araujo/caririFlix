@@ -1,13 +1,13 @@
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\controller\MoviesController.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\model\User.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\DAO\util\ConnectionFactory.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\model\Movies.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\DAO\UserDAO.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\util\exceptions\CaririFlixException.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\model\Actor.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\service\UserService.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\model\Trailer.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\model\WatchNow.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\annotations\Auth.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\DAO\MoviesDAO.java
-c:\Users\VINICIUS HENRIQUE\Documents\07_faculdade\04_semestre\01_banco de dados\v01\caririFlix\caririFlix\src\main\java\br\com\caririflix\web\service\MoviesService.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\service\UserService.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\model\Movies.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\model\WatchNow.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\util\exceptions\CaririFlixException.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\controllers\MoviesController.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\DAO\UserDAO.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\annotations\Auth.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\model\User.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\service\MoviesService.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\DAO\util\ConnectionFactory.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\DAO\MoviesDAO.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\model\Actor.java
+C:\Users\VINICIUS HENRIQUE\Documents\NetBeansProjects\caririFlix\src\main\java\br\com\caririflix\web\model\Trailer.java

@@ -1,4 +1,13 @@
+br\com\caririflix\web\util\exceptions\CaririFlixException.class
+br\com\caririflix\web\controllers\MoviesController.class
 br\com\caririflix\web\DAO\UserDAO.class
 br\com\caririflix\web\DAO\MoviesDAO.class
+br\com\caririflix\web\service\UserService.class
+br\com\caririflix\web\model\Trailer.class
+br\com\caririflix\web\model\Actor.class
+br\com\caririflix\web\service\MoviesService.class
+br\com\caririflix\web\model\Movies.class
+br\com\caririflix\web\model\User.class
+br\com\caririflix\web\model\WatchNow.class
 br\com\caririflix\web\annotations\Auth.class
 br\com\caririflix\web\DAO\util\ConnectionFactory.class
