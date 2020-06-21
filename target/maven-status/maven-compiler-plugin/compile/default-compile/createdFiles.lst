@@ -9,5 +9,6 @@ br\com\caririflix\web\service\MoviesService.class
 br\com\caririflix\web\model\Movies.class
 br\com\caririflix\web\model\User.class
 br\com\caririflix\web\model\WatchNow.class
+br\com\caririflix\web\components\AuthSession.class
 br\com\caririflix\web\annotations\Auth.class
 br\com\caririflix\web\DAO\util\ConnectionFactory.class

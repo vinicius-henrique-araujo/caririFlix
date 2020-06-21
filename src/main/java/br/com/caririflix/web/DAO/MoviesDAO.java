@@ -6,8 +6,9 @@ import javax.persistence.EntityManager;
 
 import br.com.caririflix.web.DAO.util.*;
 import br.com.caririflix.web.model.Movies;
+import javax.enterprise.context.RequestScoped;
 
-
+@RequestScoped
 public class MoviesDAO {
 
     public void save(Movies movies) {

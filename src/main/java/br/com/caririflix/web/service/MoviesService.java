@@ -7,8 +7,12 @@ import br.com.caririflix.web.model.Movies;
 import br.com.caririflix.web.util.exceptions.CaririFlixException;
 
 
+    
+
 public class MoviesService {
-    MoviesDAO moviesDAO =  new MoviesDAO();
+    
+
+    private MoviesDAO moviesDAO =  new MoviesDAO();
     
     public void save(Movies movies)throws CaririFlixException{
         if(movies.getName() == null || movies.getName().isEmpty())

@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,6 +18,7 @@ import lombok.NoArgsConstructor;
 public class Movies {
     
     @Id
+    @SequenceGenerator(name = "movie_gen", initialValue = 1, allocationSize = 1, sequenceName = "movie_seq")
     private Integer code;
     
     @Column(name = "Nome do Filme")

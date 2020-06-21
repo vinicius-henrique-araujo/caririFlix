@@ -25,8 +25,11 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </nav>
-          <a href="${pageContext.request.contextPath}/movies/new">Novo cliente</a>  
+          <a href="${pageContext.request.contextPath}/movies/new">Novo filme</a>  
         <h1>deu certo</h1>
+        
+        
+        
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

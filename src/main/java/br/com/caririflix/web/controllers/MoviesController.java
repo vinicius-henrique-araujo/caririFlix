@@ -1,17 +1,17 @@
 package br.com.caririflix.web.controllers;
 
-
-
 import javax.inject.Inject;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
+import java.util.List;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.interceptor.IncludeParameters;
+import br.com.caririflix.web.DAO.MoviesDAO;
 import br.com.caririflix.web.model.Movies;
 import br.com.caririflix.web.service.MoviesService;
+import br.com.caririflix.web.util.exceptions.CaririFlixException;
 
 @Controller
 @Path("/movies")
@@ -20,18 +20,18 @@ public class MoviesController {
     private Result result;
     @Inject
     private MoviesService moviesService;
-    
+    @Inject
+    private MoviesDAO moviesDAO;
     @Get("new")
     public  void  create () {
     }
     
-    @Post("")
-    @IncludeParameters
-    public void store(Movies movies) {          
+    @Post("new")
+    public void save(Movies movies) {          
         try {
             moviesService.save(movies);
-            result.redirectTo(this); //Observação, Tiramos o get Customer
-        } catch (Exception ex) {
+            result.redirectTo(this).getMovies(); 
+        } catch (CaririFlixException ex) {
             result.include(ex.getMessage());
             result.redirectTo(this).create();
         }    
@@ -42,8 +42,7 @@ public class MoviesController {
         try {
             moviesService.update(movies);
             result.redirectTo(this);
-        } catch (Exception e) {
-            
+        } catch (CaririFlixException e) {
             result.include(e.getMessage());
             result.redirectTo(this).update(movies);
         }
@@ -55,9 +54,15 @@ public class MoviesController {
         result.of(this).update(null);
     }    
     
-    @Get("")
+    @Get("/list")
     public void getMovies() {
-       result.include("moviesList", moviesService.all());
+
+        List<Movies> movies = moviesDAO.all();
+        
+        for( Movies movies1 : movies) {
+            System.out.println(movies1.getCode());
+        }
+        result.include("movies", movies);
     }
     
     @Post("/remove")
@@ -65,5 +70,14 @@ public class MoviesController {
         moviesService.delete(movies);
         result.redirectTo(this).getMovies();          
     }
+    
+  /*  @Public
+    @Post("busca")
+    public void listaSearch(String donorName) {
+
+        List<Movies> donor = (List<Movies>) moviesDAO.all(donorName);
+        result.include("it", movies);
+        result.of(this).listDonor();
+    }*/
 
 }

@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 public class ConnectionFactory {
 
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("cariri-flix");
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("movies");
 
     private ConnectionFactory() {
     }
